@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Parcial2Eventos_RobertoQuilez</string>
+    <string name="app_name">Parcial2Eventos</string>
+    <string name="eventos">Events</string>
+    <string name="agregar_evento">Add Event</string>
+    <string name="volver">Back</string>
+    <string name="nombre_evento">Event Name</string>
+    <string name="fecha_evento">Event Date</string>
+    <string name="guardar_evento">Save Event</string>
 </resources>

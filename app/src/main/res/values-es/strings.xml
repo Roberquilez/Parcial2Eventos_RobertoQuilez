@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Parcial2Eventos</string>
+    <string name="eventos">Eventos</string>
+    <string name="agregar_evento">Agregar Evento</string>
+    <string name="volver">Volver</string>
+    <string name="nombre_evento">Nombre del Evento</string>
+    <string name="fecha_evento">Fecha del Evento</string>
+    <string name="guardar_evento">Guardar Evento</string>
+</resources>
