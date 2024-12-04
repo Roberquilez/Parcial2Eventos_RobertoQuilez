@@ -9,7 +9,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MiHorarioApp() {
-    var selectedOption by remember { mutableStateOf(-1) } // -1: Welcome, 0: Añadir, 1: Ver, 2: ¿Qué toca ahora?, 3: Eventos
+    var selectedOption by remember { mutableStateOf(-1) } // -1: Welcome, 0: Añadir, 1: Ver, 2: ¿Qué toca ahora?, 3: Eventos, 4: Listas de Farmacias
     var horario by remember { mutableStateOf(mutableListOf<Clase>()) }
     var eventos by remember { mutableStateOf(mutableListOf<Evento>()) }
     var diaSeleccionado by remember { mutableStateOf("") }
@@ -40,6 +40,10 @@ fun MiHorarioApp() {
                 Button(onClick = { selectedOption = 3 }, modifier = Modifier.fillMaxWidth(0.8f)) {
                     Text("Eventos")
                 }
+                Spacer(modifier = Modifier.height(10.dp))
+                Button(onClick = { selectedOption = 4 }, modifier = Modifier.fillMaxWidth(0.8f)) {
+                    Text("Listas de Farmacias")
+                }
             }
             0 -> PantallaAgregarClase { nuevaClase ->
                 horario.add(nuevaClase)
@@ -54,12 +58,9 @@ fun MiHorarioApp() {
             3 -> PantallaEventos(eventos, onAgregarEvento = { selectedOption = 4 }) {
                 selectedOption = -1
             } // Eventos
-            4 -> PantallaAgregarEvento(onEventoAgregado = { nuevoEvento ->
-                eventos.add(nuevoEvento)
-                selectedOption = 3
-            }) {
-                selectedOption = 3
-            } // Agregar Evento
+            4 -> PantallaListasFarmacias {
+                selectedOption = -1
+            } // Listas de Farmacias
         }
     }
 }
