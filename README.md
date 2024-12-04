@@ -28,12 +28,12 @@ La aplicación permite ver una lista de eventos programados, con soporte para es
 #### Listar Farmacias
 La aplicación lista todas las farmacias de Zaragoza con nombre y teléfono.
 
-### Problemas que no he podido solucionar
+## Problemas que no he podido solucionar
 
 Esta parte del enunciado no he conseguido sacarla ya que me daba una cantidad de errores enorme y es tercer proyecto que empiezo de 0 para conseguir implementar el tanto el mapa como el icono
 
-## Icono
+### Icono
 Falta verificar si se muestra un icono para cada farmacia.
-## Mapa
+### Mapa
 Falta implementar la funcionalidad para mostrar un mapa con la ubicación de la farmacia seleccionada.
 
